@@ -4,53 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huellas Unicas - Encuentra tu compañero felino</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="tailwind-styles.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <img src="/img/logo.png" style="height: 50px;" alt="Logo de Adopción de Gatitos">
+            </div>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acerca">Acerca de</a></li>
                 <li><a href="#gatitos">Nuestros Gatitos</a></li>
+                <li><a href="#proceso">Proceso de Adopción</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#adopcion">Adoptar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h1>Huellas Unicas</h1>
-            <p>Encuentra tu compañero felino perfecto</p>
+         <section id="inicio">
+            <h1>Huellas Únicas</h1>
+            <p>Encuentra tu compañero felino perfecto y dale un hogar lleno de amor</p>
+            <p>Cada año, miles de gatitos buscan un hogar. Tú puedes hacer la diferencia.</p>
             <a href="#adopcion" class="cta-button">Adopta Ahora</a>
+            <div class="slider">
+    <div class="slide"><img src="/img/gatitos.jpg" alt="Gatitos adorables"></div>
+    <div class="slide"><img src="/img/gatito1.jpg" alt="Gatitos adorables"></div>
+    <div class="slide"><img src="/img/gatito 2.jpg" alt="Gatitos adorables"></div>
+    <div class="slide"><img src="/img/gatito 3.jpg" alt="Gatitos adorables"></div>
+    </div>
         </section>
 
-        <section id="acerca">
+         <section id="acerca">
             <h2>Acerca de Nosotros</h2>
-            <p>Somos una organización dedicada a encontrar hogares amorosos para gatitos necesitados.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos una organización sin fines de lucro dedicada a encontrar hogares amorosos para gatitos necesitados. Desde 2010, hemos ayudado a más de 5,000 gatitos a encontrar familias que los amen.</p>
+                    <br>
+                    <p>Nuestra misión es asegurar que cada gatito tenga un hogar seguro y amoroso, y educar a la comunidad sobre la importancia de la adopción responsable y el cuidado de los animales.</p>
+                    <br>
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li>Compasión por todos los animales</li>
+                        <li>Compromiso con el bienestar de los gatitos</li>
+                        <li>Educación y concientización sobre la adopción responsable</li>
+                        <li>Transparencia en nuestras operaciones</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="/img/voluntarios.jpg" alt="Voluntarios cuidando gatitos">
+                </div>
+            </div>
         </section>
 
         <section id="gatitos">
             <h2>Nuestros Gatitos</h2>
+            <p>Conoce a algunos de nuestros adorables gatitos que están esperando un hogar permanente:</p>
+            <br>
             <div class="gatitos-grid">
                 <div class="gatito-card">
-                    <img src="/img/Luna.jpg" alt="Gatito 1">
+                    <img src="/img/Luna.jpg" alt="Luna">
                     <h3>Luna</h3>
-                    <p>Es una gatita atigrada de 3 meses, muy cariñosa.</p>
+                    <p>3 meses, hembra</p>
+                    <p>Luna es una gatita juguetona y cariñosa que adora los mimos.</p>
+                    <a href="#adopcion" class="adopt-button">Adoptar a Luna</a>
                 </div>
                 <div class="gatito-card">
-                    <img src="/img/simba.jpg" alt="Gatito 2">
+                    <img src="/img/simba.jpg" style="height: 250px;" alt="Simba">
                     <h3>Simba</h3>
-                    <p>Es un gatito naranja de 6 meses, juguetón y enérgico.</p>
+                    <p>6 meses, macho</p>
+                    <p>Simba es un gatito enérgico que ama jugar con pelotas y perseguir juguetes.</p>
+                    <a href="#adopcion" class="adopt-button">Adoptar a Simba</a>
                 </div>
+                <div class="gatito-card">
+                    <img src="/img/Mimi.jpg" alt="Mimi">
+                    <h3>Mimi</h3>
+                    <p>3 años, hembra</p>
+                    <p>Mimi es una gata tranquila que disfruta de largas siestas al sol.</p>
+                    <a href="#adopcion" class="adopt-button">Adoptar a Nala</a>
+                </div>
+             </div>
+        </section>
 
+        <section id="proceso">
+            <h2>Proceso de Adopción</h2>
+            <div class="proceso-pasos">
+                <div class="paso">
+                    <i class="fas fa-search"></i>
+                    <h3>1. Encuentra tu gatito</h3>
+                    <p>Explora nuestros gatitos disponibles y encuentra el que mejor se adapte a ti.</p>
+                </div>
+                <div class="paso">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>2. Llena el formulario</h3>
+                    <p>Completa nuestro formulario de adopción con tus datos y preferencias.</p>
+                </div>
+                <div class="paso">
+                    <i class="fas fa-home"></i>
+                    <h3>3. Visita domiciliaria</h3>
+                    <p>Realizaremos una breve visita para asegurar un hogar adecuado para el gatito.</p>
+                </div>
+                <div class="paso">
+                    <i class="fas fa-heart"></i>
+                    <h3>4. ¡Adopta!</h3>
+                    <p>Firma los papeles de adopción y lleva a tu nuevo amigo a casa.</p>
+                </div>
             </div>
         </section>
 
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio">
+                    <img src="/img/p1.jpg" alt="María">
+                    <p><strong>Maria</strong></p>
+                    <blockquote>"Adoptar fue la mejor decisión que he tomado. Ha llenado mi vida de alegría y amor."</blockquote>
+                    
+                </div>
+                <div class="testimonio">
+                    <img src="/img/p2.jpg" alt="Camila">
+                    <p><strong>Camila</strong></p>
+                    <blockquote>"El proceso de adopción fue muy sencillo y el equipo fue increíblemente útil. Ahora tenemos un nuevo miembro de la familia."</blockquote>
+                   
+                </div>
+                <div class="testimonio">
+                    <img src="/img/p3.jpg" alt="Ana">
+                    <p><strong>Ana</strong></p>
+                    <blockquote>"Estoy muy agradecida por la labor que hacen. Mi gatita es la compañera perfecta."</blockquote>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3><strong>¿Cuál es el costo de adopción?</strong></h3>
+                    <p>¡Es completamente gratis! ¿Qué estas esperando? ¡Adopta un gatito!</p>
+                </div>
+                <div class="faq-item">
+                    <h3><strong>¿Puedo adoptar si vivo en un apartamento?</strong></h3>
+                    <p>¡Sí! Los gatos se adaptan bien a vivir en apartamentos. Lo importante es proporcionar un ambiente seguro y enriquecedor.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><strong>¿Qué pasa si la adopción no funciona?</strong></h3>
+                    <p>Siempre aceptamos devoluciones si la adopción no funciona. Nuestro objetivo es encontrar el hogar perfecto para cada gatito.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><strong>¿Los gatitos vienen con sus vacunas al día?</strong></h3>
+                    <p>Sí, todos nuestros gatitos están al día con sus vacunas y han recibido un chequeo veterinario completo antes de la adopción.</p>
+                </div>
+            </div>
+        </section>
+
+
         <section id="adopcion">
             <h2>Formulario de Adopción</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
+            <form method="post">
+                <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
                 <label for="email">Email:</label>
@@ -58,6 +174,30 @@
 
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="tipo-vivienda">Tipo de vivienda:</label>
+                <select id="tipo-vivienda" name="tipo-vivienda" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="experiencia">¿Has tenido gatos antes?</label>
+                <select id="experiencia" name="experiencia" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="otros-animales">¿Tienes otros animales en casa?</label>
+                <input type="text" id="otros-animales" name="otros-animales">
+
+                <label for="gatito-interes">¿Qué gatito te interesa adoptar?</label>
+                <input type="text" id="gatito-interes" name="gatito-interes">
 
                 <label for="mensaje">¿Por qué quieres adoptar un gatito?</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
@@ -78,5 +218,7 @@
             <p>Profesor: Yerson González</p>
         </div>
     </footer>
+
+    <script src="/functions.js"></script>
 </body>
 </html>
